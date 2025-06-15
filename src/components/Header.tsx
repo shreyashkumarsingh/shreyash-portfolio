@@ -31,7 +31,7 @@ const Header = () => {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           <div className="text-2xl font-bold text-blue-600">
-            Shreyash Singh
+            Shreyash Kumar Singh
           </div>
           
           {/* Desktop Navigation */}

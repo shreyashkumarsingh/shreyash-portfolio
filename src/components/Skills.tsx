@@ -1,5 +1,5 @@
 
-import { Code, Database, Globe, Tool } from "lucide-react";
+import { Code, Database, Globe, Settings } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
@@ -41,7 +41,7 @@ const Skills = () => {
     },
     {
       title: "Design & Other",
-      icon: <Tool className="text-orange-600" size={24} />,
+      icon: <Settings className="text-orange-600" size={24} />,
       skills: [
         { name: "Figma", level: 80 },
         { name: "Framer", level: 75 },

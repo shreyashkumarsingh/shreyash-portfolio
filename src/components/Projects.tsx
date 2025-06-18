@@ -25,11 +25,11 @@ const Projects = () => {
     {
       title: "Task Scheduler Web App",
       year: "2025",
-      description: "Implemented using Node.js, Express.js, and MySQL; supported timed and lexicographic ordering of tasks with an intuitive user interface for productivity management.",
-      technologies: ["Node.js", "Express.js", "MySQL", "JavaScript"],
+      description: "Agenda Vista is a full-stack task management web application that helps users organize, track, and manage their daily tasks efficiently. It features a modern React frontend with a Node.js/Express backend, offering dashboards, calendar views, and productivity tools.",
+      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express"],
       icon: <Code className="text-purple-600" size={24} />,
       color: "purple",
-      codeUrl: "https://github.com/yourusername/task-scheduler",
+      codeUrl: "https://github.com/shreyashkumarsingh/agenda-vista-project",
       demoUrl: "https://taskscheduler-demo.example.com"
     },
     {
@@ -39,7 +39,7 @@ const Projects = () => {
       technologies: ["JavaScript", "Bootstrap", "HTML5", "CSS3"],
       icon: <Smartphone className="text-green-600" size={24} />,
       color: "green",
-      codeUrl: "https://github.com/yourusername/restaurant-website",
+      codeUrl: "https://github.com/shreyashkumarsingh/fresh-flavors-feedback-hub",
       demoUrl: "https://restaurant-demo.example.com"
     },
     // {
@@ -101,17 +101,17 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  {/*
-                  <a
-                    href={project.codeUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors"
-                  >
-                    <Github size={18} />
-                    <span>View Code</span>
-                  </a>
-                  */}
+                  {project.title !== "Convoy Management Application" && (
+                    <a
+                      href={project.codeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                    >
+                      <Github size={18} />
+                      <span>View Code</span>
+                    </a>
+                  )}
                   {/*
                   <a
                     href={project.demoUrl}

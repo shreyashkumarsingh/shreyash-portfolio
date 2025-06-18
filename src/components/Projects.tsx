@@ -36,7 +36,7 @@ const Projects = () => {
       title: "Restaurant Website",
       year: "2025",
       description: "Developed dynamic site with customer order system, feedback form, and mobile-first design using JavaScript and Bootstrap for enhanced user experience.",
-      technologies: ["JavaScript", "Bootstrap", "HTML5", "CSS3"],
+      technologies: ["HTML5", "CSS3","React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Express", "Node.js", "CORS", "Nodemon"],
       icon: <Smartphone className="text-green-600" size={24} />,
       color: "green",
       codeUrl: "https://github.com/shreyashkumarsingh/fresh-flavors-feedback-hub",

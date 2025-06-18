@@ -70,20 +70,20 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="flex items-center gap-4 p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
+              {/* <div className="flex items-center gap-4 p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">
                 <div className="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center">
                   <Phone className="text-white" size={20} />
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-800">Phone</h4>
                   <a 
-                    href="tel:+919531969694"
+                    href="tel:"
                     className="text-purple-600 hover:text-purple-700 transition-colors"
                   >
-                    +91-9531969694
+                    
                   </a>
                 </div>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-4 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
                 <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
@@ -112,7 +112,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Contact Form */}
+          {/* Contact Form
           <div className="bg-gradient-to-br from-slate-50 to-blue-50 p-8 rounded-lg">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Send a Message</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -190,6 +190,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
+        </div> */}
         </div>
 
         {/* Footer */}

@@ -1,4 +1,3 @@
-
 import { ExternalLink, Github, Code, Database, Smartphone } from "lucide-react";
 
 const Projects = () => {
@@ -9,7 +8,19 @@ const Projects = () => {
       description: "Full-stack convoy tracking system for Port Blair administration using Node.js, Express.js, and TypeScript. Built with React and Tailwind CSS for a clean, responsive UI; aimed to enhance citizen security at inter-island checkposts.",
       technologies: ["Node.js", "Express.js", "TypeScript", "React", "Tailwind CSS"],
       icon: <Database className="text-blue-600" size={24} />,
-      color: "blue"
+      color: "blue",
+      codeUrl: "https://github.com/yourusername/convoy-management-app",
+      // demoUrl: "https://convoy-demo.example.com"
+    },
+    {
+      title: "HireScan-AI Resume Parser",
+      year: "2025",
+      description: "HireScan is an AI-powered resume screening tool that parses, scores, and matches candidates to job roles in seconds—built to streamline smart hiring for modern recruiters",
+      technologies: ["Python", "Flask", "HTML5", "CSS3", "JavaScript", "Bootstrap 5", "PyMuPDF", "spaCy"],
+      icon: <Code className="text-orange-600" size={24} />,
+      color: "orange",
+      codeUrl: "https://github.com/shreyashkumarsingh/HireScan-ResumeParserWebsite",
+      demoUrl: "https://garden-demo.example.com"
     },
     {
       title: "Task Scheduler Web App",
@@ -17,7 +28,9 @@ const Projects = () => {
       description: "Implemented using Node.js, Express.js, and MySQL; supported timed and lexicographic ordering of tasks with an intuitive user interface for productivity management.",
       technologies: ["Node.js", "Express.js", "MySQL", "JavaScript"],
       icon: <Code className="text-purple-600" size={24} />,
-      color: "purple"
+      color: "purple",
+      codeUrl: "https://github.com/yourusername/task-scheduler",
+      demoUrl: "https://taskscheduler-demo.example.com"
     },
     {
       title: "Restaurant Website",
@@ -25,16 +38,20 @@ const Projects = () => {
       description: "Developed dynamic site with customer order system, feedback form, and mobile-first design using JavaScript and Bootstrap for enhanced user experience.",
       technologies: ["JavaScript", "Bootstrap", "HTML5", "CSS3"],
       icon: <Smartphone className="text-green-600" size={24} />,
-      color: "green"
+      color: "green",
+      codeUrl: "https://github.com/yourusername/restaurant-website",
+      demoUrl: "https://restaurant-demo.example.com"
     },
-    {
-      title: "Garden Design Firm Website",
-      year: "2024",
-      description: "Created a responsive static website using HTML, CSS, and Bootstrap to showcase garden layouts and services with beautiful visual presentations.",
-      technologies: ["HTML5", "CSS3", "Bootstrap", "Responsive Design"],
-      icon: <Code className="text-orange-600" size={24} />,
-      color: "orange"
-    }
+    // {
+    //   title: "HireScan-AI Resume Parser",
+    //   year: "2025",
+    //   description: "HireScan is an AI-powered resume screening tool that parses, scores, and matches candidates to job roles in seconds—built to streamline smart hiring for modern recruiters",
+    //   technologies: ["Python", "Flask", "HTML5", "CSS3", "JavaScript", "Bootstrap 5", "PyMuPDF", "spaCy"],
+    //   icon: <Code className="text-orange-600" size={24} />,
+    //   color: "orange",
+    //   codeUrl: "https://github.com/shreyashkumarsingh/HireScan-ResumeParserWebsite",
+    //   demoUrl: "https://garden-demo.example.com"
+    // }
   ];
 
   return (
@@ -84,14 +101,28 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  <button className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors">
+                  {/*
+                  <a
+                    href={project.codeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                  >
                     <Github size={18} />
                     <span>View Code</span>
-                  </button>
-                  <button className="flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium transition-colors">
+                  </a>
+                  */}
+                  {/*
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium transition-colors"
+                  >
                     <ExternalLink size={18} />
                     <span>Live Demo</span>
-                  </button>
+                  </a>
+                  */}
                 </div>
               </div>
             </div>

@@ -36,10 +36,10 @@ const Hero = () => {
                 <MapPin size={16} className="text-blue-600" />
                 <span>Port Blair, A&N Islands</span>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Phone size={16} className="text-blue-600" />
-                <span>+91-9531969694</span>
-              </div>
+                <span>+91-</span>
+              </div> */}
               <div className="flex items-center gap-2">
                 <Mail size={16} className="text-blue-600" />
                 <span>shreyashkrsingh@gmail.com</span>
@@ -70,7 +70,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 absolute -inset-4 animate-pulse"></div>
               <img
-                src="/lovable-uploads/a4ffbe97-45ef-4de2-9043-45c2bd7bd2be.png"
+                src="/profile-photo/a4ffbe97-45ef-4de2-9043-45c2bd7bd2be.png"
                 alt="Shreyash Kumar Singh"
                 className="w-72 h-72 rounded-full object-cover border-4 border-white shadow-2xl relative z-10"
               />

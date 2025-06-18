@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -30,10 +29,15 @@ const Header = () => {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold text-blue-600">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="text-2xl font-bold text-blue-600 focus:outline-none bg-transparent border-none cursor-pointer"
+            style={{ background: "none", border: "none", padding: 0 }}
+            aria-label="Go to top"
+          >
             Shreyash Kumar Singh
-          </div>
-          
+          </button>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             {["About", "Experience", "Projects", "Skills", "Contact"].map((item) => (

@@ -1,7 +1,130 @@
 
-import { Code, Database, Globe, Settings } from "lucide-react";
+import { Code, Database, Globe, Settings, Award, ExternalLink, Calendar, Shield } from "lucide-react";
 
 const Skills = () => {
+  const certifications = [
+    {
+      title: "AWS Academy Graduate - AWS Academy Cloud Foundations",
+      issuer: "Amazon Web Services (AWS)",
+      issueDate: "Mar 2025",
+      credentialId: null,
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Shield className="text-orange-600" size={24} />,
+      color: "orange",
+      skills: ["Cloud Computing", "AWS Services"]
+    },
+    {
+      title: "Pinnacle Labs Web Development Internship",
+      issuer: "Pinnacle Labs",
+      issueDate: "Mar 2025",
+      credentialId: null,
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Code className="text-blue-600" size={24} />,
+      color: "blue",
+      skills: ["Web Content Writing", "Web Development"]
+    },
+    {
+      title: "Introduction to Generative AI",
+      issuer: "Google Cloud Training Online",
+      issueDate: "Dec 2024",
+      credentialId: "RW2UEIKNHGO7",
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Database className="text-green-600" size={24} />,
+      color: "green",
+      skills: ["Generative AI"]
+    },
+    {
+      title: "Machine Learning with Python",
+      issuer: "IBM",
+      issueDate: "Dec 2024",
+      credentialId: "G5YW2BT8WT3V",
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Code className="text-blue-800" size={24} />,
+      color: "blue",
+      skills: ["Python Programming", "IBM Machine Learning"]
+    },
+    {
+      title: "Introduction to Front-End Development",
+      issuer: "Meta",
+      issueDate: "Jul 2024",
+      credentialId: "B6LTHFA35H9T",
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Globe className="text-blue-600" size={24} />,
+      color: "blue",
+      skills: ["Front-End Development"]
+    },
+    {
+      title: "Version Control",
+      issuer: "Meta",
+      issueDate: "Jul 2024",
+      credentialId: "58M43FGSH799",
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Settings className="text-gray-600" size={24} />,
+      color: "gray",
+      skills: ["Version Control"]
+    },
+    {
+      title: "HTML and CSS in depth",
+      issuer: "Meta",
+      issueDate: "Jun 2024",
+      credentialId: "KMHFXTSSH33V",
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Globe className="text-purple-600" size={24} />,
+      color: "purple",
+      skills: ["Cascading Style Sheets (CSS)", "HTML5"]
+    },
+    {
+      title: "Programming with JavaScript",
+      issuer: "Meta",
+      issueDate: "Jun 2024",
+      credentialId: "5PR9J99S38SX",
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Code className="text-yellow-600" size={24} />,
+      color: "yellow",
+      skills: ["JavaScript"]
+    },
+    {
+      title: "AICTE AWS AI-ML VIRTUAL INTERNSHIP",
+      issuer: "All India Council for Technical Education (AICTE)",
+      issueDate: "2024",
+      credentialId: null,
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Database className="text-orange-600" size={24} />,
+      color: "orange",
+      skills: ["Artificial Intelligence (AI)", "Machine Learning"]
+    },
+    {
+      title: "AWS Academy Graduate - AWS Academy Machine Learning Foundations",
+      issuer: "Amazon Web Services (AWS)",
+      issueDate: "2024",
+      credentialId: null,
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Shield className="text-orange-600" size={24} />,
+      color: "orange",
+      skills: ["Machine Learning"]
+    },
+    {
+      title: "DECODE AND DOMINATE CERTIFICATE",
+      issuer: "KIIT - Kalinga Institute of Industrial Technology",
+      issueDate: "2024",
+      credentialId: null,
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Award className="text-blue-600" size={24} />,
+      color: "blue",
+      skills: ["Coding"]
+    },
+    {
+      title: "Red Hat System Administration I (RH124 - RHA) - Ver. 9.3",
+      issuer: "Red Hat",
+      issueDate: "2024",
+      credentialId: null,
+      verifyUrl: "#", // Add your verification URL here
+      icon: <Settings className="text-red-600" size={24} />,
+      color: "red",
+      skills: ["System Administration", "Linux"]
+    }
+  ];
+
   const skillCategories = [
     {
       title: "Frontend Development",
@@ -56,6 +179,74 @@ const Skills = () => {
   return (
     <section id="skills" className="py-20 px-6 bg-gradient-to-br from-slate-50 to-blue-50">
       <div className="container mx-auto max-w-6xl">
+        {/* Certifications Section */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-800 mb-4">Licenses & Certifications</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+            Professional certifications and achievements that validate my technical expertise and commitment to continuous learning.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+          {certifications.map((cert, index) => (
+            <div
+              key={index}
+              className="group bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+            >
+              <div className="p-6">
+                <div className="flex items-start justify-between mb-4">
+                  <div className="flex items-center gap-3">
+                    {cert.icon}
+                    <div className="flex items-center gap-2">
+                      <Calendar className="text-gray-400" size={16} />
+                      <span className="text-sm text-gray-500">{cert.issueDate}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                  {cert.title}
+                </h3>
+                
+                <p className="text-gray-600 font-medium mb-3">
+                  {cert.issuer}
+                </p>
+
+                {cert.credentialId && (
+                  <p className="text-sm text-gray-500 mb-4">
+                    Credential ID: {cert.credentialId}
+                  </p>
+                )}
+
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {cert.skills.map((skill, i) => (
+                    <span
+                      key={i}
+                      className="px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex gap-3">
+                  <a
+                    href={cert.verifyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors text-sm"
+                  >
+                    <ExternalLink size={16} />
+                    <span>Verify Certificate</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Technical Skills Section */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">Technical Skills</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>

@@ -8,7 +8,7 @@ const Skills = () => {
       issuer: "Amazon Web Services (AWS)",
       issueDate: "Mar 2025",
       credentialId: null,
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741606325608/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Shield className="text-orange-600" size={24} />,
       color: "orange",
       skills: ["Cloud Computing", "AWS Services"]

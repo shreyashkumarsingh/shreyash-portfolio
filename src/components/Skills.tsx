@@ -18,7 +18,7 @@ const Skills = () => {
       issuer: "Pinnacle Labs",
       issueDate: "Mar 2025",
       credentialId: null,
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741357070912/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Code className="text-blue-600" size={24} />,
       color: "blue",
       skills: ["Web Content Writing", "Web Development"]
@@ -28,7 +28,7 @@ const Skills = () => {
       issuer: "Google Cloud Training Online",
       issueDate: "Dec 2024",
       credentialId: "RW2UEIKNHGO7",
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741687294894/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Database className="text-green-600" size={24} />,
       color: "green",
       skills: ["Generative AI"]
@@ -38,7 +38,7 @@ const Skills = () => {
       issuer: "IBM",
       issueDate: "Dec 2024",
       credentialId: "G5YW2BT8WT3V",
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741687357248/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Code className="text-blue-800" size={24} />,
       color: "blue",
       skills: ["Python Programming", "IBM Machine Learning"]
@@ -48,7 +48,7 @@ const Skills = () => {
       issuer: "Meta",
       issueDate: "Jul 2024",
       credentialId: "B6LTHFA35H9T",
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741687429858/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Globe className="text-blue-600" size={24} />,
       color: "blue",
       skills: ["Front-End Development"]
@@ -58,7 +58,7 @@ const Skills = () => {
       issuer: "Meta",
       issueDate: "Jul 2024",
       credentialId: "58M43FGSH799",
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741687499006/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Settings className="text-gray-600" size={24} />,
       color: "gray",
       skills: ["Version Control"]
@@ -68,7 +68,7 @@ const Skills = () => {
       issuer: "Meta",
       issueDate: "Jun 2024",
       credentialId: "KMHFXTSSH33V",
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741687577988/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Globe className="text-purple-600" size={24} />,
       color: "purple",
       skills: ["Cascading Style Sheets (CSS)", "HTML5"]
@@ -78,7 +78,7 @@ const Skills = () => {
       issuer: "Meta",
       issueDate: "Jun 2024",
       credentialId: "5PR9J99S38SX",
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741687643432/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Code className="text-yellow-600" size={24} />,
       color: "yellow",
       skills: ["JavaScript"]
@@ -88,7 +88,7 @@ const Skills = () => {
       issuer: "All India Council for Technical Education (AICTE)",
       issueDate: "2024",
       credentialId: null,
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741786705581/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Database className="text-orange-600" size={24} />,
       color: "orange",
       skills: ["Artificial Intelligence (AI)", "Machine Learning"]
@@ -98,17 +98,17 @@ const Skills = () => {
       issuer: "Amazon Web Services (AWS)",
       issueDate: "2024",
       credentialId: null,
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741786560861/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Shield className="text-orange-600" size={24} />,
       color: "orange",
       skills: ["Machine Learning"]
     },
     {
-      title: "DECODE AND DOMINATE CERTIFICATE",
+      title: "DECODE AND DOMINATE HACKATHON CERTIFICATE",
       issuer: "KIIT - Kalinga Institute of Industrial Technology",
       issueDate: "2024",
       credentialId: null,
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1741706368870/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Award className="text-blue-600" size={24} />,
       color: "blue",
       skills: ["Coding"]
@@ -118,7 +118,7 @@ const Skills = () => {
       issuer: "Red Hat",
       issueDate: "2024",
       credentialId: null,
-      verifyUrl: "#", // Add your verification URL here
+      verifyUrl: "https://www.linkedin.com/in/shreyashkrsingh/details/certifications/1745839101147/single-media-viewer/?profileId=ACoAAFAU-LMBncQ38Wm-B0tgYTDO1jzlBnNTXrI", // Add your verification URL here
       icon: <Settings className="text-red-600" size={24} />,
       color: "red",
       skills: ["System Administration", "Linux"]

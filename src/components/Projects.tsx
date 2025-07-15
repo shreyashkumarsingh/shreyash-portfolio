@@ -9,7 +9,7 @@ const Projects = () => {
       technologies: ["Node.js", "Express.js", "TypeScript", "React", "Tailwind CSS"],
       icon: <Database className="text-blue-600" size={24} />,
       color: "blue",
-      codeUrl: "https://github.com/yourusername/convoy-management-app",
+      // codeUrl: "https://github.com/shreyashkumarsingh/convoy-management-app",
       // demoUrl: "https://convoy-demo.example.com"
     },
     {
@@ -20,17 +20,17 @@ const Projects = () => {
       icon: <Code className="text-orange-600" size={24} />,
       color: "orange",
       codeUrl: "https://github.com/shreyashkumarsingh/HireScan-ResumeParserWebsite",
-      demoUrl: "https://garden-demo.example.com"
+      demoUrl: "https://hirescan-resumeparserwebsite-8z1n.onrender.com/"
     },
     {
-      title: "Task Scheduler Web App",
+      title: "Task Master Web App",
       year: "2025",
-      description: "Agenda Vista is a full-stack task management web application that helps users organize, track, and manage their daily tasks efficiently. It features a modern React frontend with a Node.js/Express backend, offering dashboards, calendar views, and productivity tools.",
+      description: "Task Master is a full-stack task management web application that helps users organize, track, and manage their daily tasks efficiently. It features a modern React frontend with a Node.js/Express backend, offering dashboards, calendar views, and productivity tools.",
       technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express"],
       icon: <Code className="text-purple-600" size={24} />,
       color: "purple",
-      codeUrl: "https://github.com/shreyashkumarsingh/agenda-vista-project",
-      demoUrl: "https://taskscheduler-demo.example.com"
+      codeUrl: "https://github.com/shreyashkumarsingh/Task-Master",
+      demoUrl: "https://taskmaster-frontend-qy61.onrender.com/"
     },
     {
       title: "Restaurant Website",
@@ -39,8 +39,8 @@ const Projects = () => {
       technologies: ["HTML5", "CSS3","React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Express", "Node.js", "CORS", "Nodemon"],
       icon: <Smartphone className="text-green-600" size={24} />,
       color: "green",
-      codeUrl: "https://github.com/shreyashkumarsingh/fresh-flavors-feedback-hub",
-      demoUrl: "https://restaurant-demo.example.com"
+      codeUrl: "https://github.com/shreyashkumarsingh/Indian-Flavour-Palace",
+      demoUrl: "https://indian-flavour-palace-web.vercel.app/"
     },
     // {
     //   title: "HireScan-AI Resume Parser",
@@ -101,7 +101,7 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4">
-                  {project.title !== "Convoy Management Application" && (
+                  {project.codeUrl && (
                     <a
                       href={project.codeUrl}
                       target="_blank"
@@ -112,17 +112,17 @@ const Projects = () => {
                       <span>View Code</span>
                     </a>
                   )}
-                  {/*
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium transition-colors"
-                  >
-                    <ExternalLink size={18} />
-                    <span>Live Demo</span>
-                  </a>
-                  */}
+                  {project.demoUrl && (
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium transition-colors"
+                    >
+                      <ExternalLink size={18} />
+                      <span>View Website</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

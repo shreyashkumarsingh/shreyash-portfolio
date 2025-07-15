@@ -70,7 +70,7 @@ const Hero = () => {
             <div className="relative">
               <div className="w-80 h-80 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-20 absolute -inset-4 animate-pulse"></div>
               <img
-                src="/profile-photo/a4ffbe97-45ef-4de2-9043-45c2bd7bd2be.png"
+                src="/profile-photo/0eddf17e-3ec0-4bd3-9789-d7da4a117284.jpg"
                 alt="Shreyash Kumar Singh"
                 className="w-72 h-72 rounded-full object-cover border-4 border-white shadow-2xl relative z-10"
               />

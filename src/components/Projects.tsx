@@ -13,14 +13,14 @@ const Projects = () => {
       // demoUrl: "https://convoy-demo.example.com"
     },
     {
-      title: "HireScan-AI Resume Parser",
+      title: "NextHire AI",
       year: "2025",
-      description: "HireScan is an AI-powered resume screening tool that parses, scores, and matches candidates to job roles in seconds—built to streamline smart hiring for modern recruiters",
-      technologies: ["Python", "Flask", "HTML5", "CSS3", "JavaScript", "Bootstrap 5", "PyMuPDF", "spaCy"],
+      description: "Developed a production-ready AI-powered resume screening platform that automates candidate parsing, skill extraction, and job-fit scoring. Built with a React frontend and Flask backend, the system integrates NLP-based resume analysis, JWT-secured authentication, recruiter dashboards, and analytics visualization. Deployed using Docker and Gunicorn on Render, with production-grade security, rate limiting, and modular architecture for scalable SaaS deployment.",
+      technologies: ["React", "Flask", "Docker", "NLP", "JWT", "Gunicorn", "Python", "JavaScript"],
       icon: <Code className="text-orange-600" size={24} />,
       color: "orange",
-      codeUrl: "https://github.com/shreyashkumarsingh/HireScan-ResumeParserWebsite",
-      demoUrl: "https://hirescan-resumeparserwebsite-8z1n.onrender.com/"
+      codeUrl: "https://github.com/shreyashkumarsingh/nextHire",
+      demoUrl: "https://nexthire-2dkf.onrender.com/"
     },
     {
       title: "Task Master Web App",

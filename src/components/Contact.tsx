@@ -99,7 +99,7 @@ const Contact = () => {
             {/* LinkedIn Button */}
             <div className="pt-6">
               <a
-                href="https://www.linkedin.com/in/shreyash-kumar-singh-0ar14"
+                href="https://www.linkedin.com/in/shreyashkrsingh/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg hover:shadow-lg transition-all duration-300 hover:-translate-y-1"

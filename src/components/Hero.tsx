@@ -55,7 +55,7 @@ const Hero = () => {
                 Learn More
               </button>
               <a
-                href="https://www.linkedin.com/in/shreyash-kumar-singh-0ar14"
+                href="https://www.linkedin.com/in/shreyashkrsingh/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"

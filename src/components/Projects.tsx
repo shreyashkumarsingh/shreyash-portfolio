@@ -55,12 +55,12 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 bg-white">
+    <section id="projects" className="py-20 px-6 bg-white dark:bg-gray-900">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">Featured Projects</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
             Here are some of my recent projects that demonstrate my skills in full-stack development and problem-solving.
           </p>
         </div>
@@ -69,23 +69,23 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group bg-gradient-to-br from-white to-gray-50 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100"
+              className="group bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-800/50 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-gray-100 dark:border-gray-700"
             >
               <div className="p-8">
                 <div className="flex items-center justify-between mb-4">
                   <div className="flex items-center gap-3">
                     {project.icon}
-                    <span className={`px-3 py-1 bg-${project.color}-100 text-${project.color}-600 rounded-full text-sm font-medium`}>
+                    <span className={`px-3 py-1 bg-${project.color}-100 dark:bg-${project.color}-900/30 text-${project.color}-600 dark:text-${project.color}-400 rounded-full text-sm font-medium`}>
                       {project.year}
                     </span>
                   </div>
                 </div>
 
-                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </h3>
                 
-                <p className="text-gray-600 leading-relaxed mb-6">
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
                   {project.description}
                 </p>
 
@@ -93,7 +93,7 @@ const Projects = () => {
                   {project.technologies.map((tech, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-gray-100 text-gray-700 rounded-md text-sm font-medium hover:bg-gray-200 transition-colors"
+                      className="px-3 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-md text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors"
                     >
                       {tech}
                     </span>
@@ -106,7 +106,7 @@ const Projects = () => {
                       href={project.codeUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors"
+                      className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors"
                     >
                       <Github size={18} />
                       <span>View Code</span>
@@ -117,7 +117,7 @@ const Projects = () => {
                       href={project.demoUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-purple-600 hover:text-purple-700 font-medium transition-colors"
+                      className="flex items-center gap-2 text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 font-medium transition-colors"
                     >
                       <ExternalLink size={18} />
                       <span>View Website</span>

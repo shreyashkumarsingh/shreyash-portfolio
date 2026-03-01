@@ -31,12 +31,12 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 bg-white">
+    <section id="contact" className="py-20 px-6 bg-white dark:bg-gray-800">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Get In Touch</h2>
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">Get In Touch</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
             I'm always interested in new opportunities and exciting projects. 
             Let's connect and discuss how we can work together!
           </p>
@@ -46,8 +46,8 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">Let's Connect</h3>
-              <p className="text-gray-600 leading-relaxed mb-8">
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-6">Let's Connect</h3>
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
                 I'm currently looking for internship opportunities and exciting projects 
                 in web development. Feel free to reach out if you'd like to discuss 
                 potential collaborations or just want to say hello!
@@ -55,15 +55,15 @@ const Contact = () => {
             </div>
 
             <div className="space-y-6">
-              <div className="flex items-center gap-4 p-4 bg-blue-50 rounded-lg hover:bg-blue-100 transition-colors">
+              <div className="flex items-center gap-4 p-4 bg-blue-50 dark:bg-blue-900/30 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors">
                 <div className="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center">
                   <Mail className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Email</h4>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-100">Email</h4>
                   <a 
                     href="mailto:shreyashkrsingh@gmail.com"
-                    className="text-blue-600 hover:text-blue-700 transition-colors"
+                    className="text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 transition-colors"
                   >
                     shreyashkrsingh@gmail.com
                   </a>
@@ -85,13 +85,13 @@ const Contact = () => {
                 </div>
               </div> */}
 
-              <div className="flex items-center gap-4 p-4 bg-green-50 rounded-lg hover:bg-green-100 transition-colors">
+              <div className="flex items-center gap-4 p-4 bg-green-50 dark:bg-green-900/30 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/50 transition-colors">
                 <div className="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
                   <MapPin className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-800">Location</h4>
-                  <span className="text-green-600">Port Blair, A&N Islands</span>
+                  <h4 className="font-semibold text-gray-800 dark:text-gray-100">Location</h4>
+                  <span className="text-green-600 dark:text-green-400">Port Blair, A&N Islands</span>
                 </div>
               </div>
             </div>
@@ -194,8 +194,8 @@ const Contact = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-16 pt-8 border-t border-gray-200 text-center">
-          <p className="text-gray-600">
+        <div className="mt-16 pt-8 border-t border-gray-200 dark:border-gray-700 text-center">
+          <p className="text-gray-600 dark:text-gray-300">
             © 2025 Shreyash Kumar Singh. Built with React & Tailwind CSS.
           </p>
         </div>

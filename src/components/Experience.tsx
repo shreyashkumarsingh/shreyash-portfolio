@@ -40,10 +40,10 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 px-6 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="experience" className="py-20 px-6 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto max-w-4xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Work Experience</h2>
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">Work Experience</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
         </div>
 
@@ -54,31 +54,31 @@ const Experience = () => {
           {experiences.map((exp, index) => (
             <div key={index} className="relative mb-12">
               {/* Timeline Dot */}
-              <div className={`absolute left-2 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-${exp.color}-600 rounded-full border-4 border-white shadow-lg`}></div>
+              <div className={`absolute left-2 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-${exp.color}-600 rounded-full border-4 border-white dark:border-gray-800 shadow-lg`}></div>
               
               {/* Content */}
               <div className={`ml-12 md:ml-0 ${index % 2 === 0 ? 'md:mr-1/2 md:pr-12' : 'md:ml-1/2 md:pl-12'}`}>
-                <div className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
                   <div className="flex flex-wrap items-center gap-2 mb-4">
-                    <span className={`px-3 py-1 bg-${exp.color}-100 text-${exp.color}-600 rounded-full text-sm font-medium`}>
+                    <span className={`px-3 py-1 bg-${exp.color}-100 dark:bg-${exp.color}-900/30 text-${exp.color}-600 dark:text-${exp.color}-400 rounded-full text-sm font-medium`}>
                       {exp.period}
                     </span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-gray-800 mb-2">{exp.title}</h3>
+                  <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">{exp.title}</h3>
                   <div className="flex items-center gap-2 mb-2">
-                    <ExternalLink size={16} className="text-gray-500" />
-                    <span className="text-gray-700 font-medium">{exp.company}</span>
+                    <ExternalLink size={16} className="text-gray-500 dark:text-gray-400" />
+                    <span className="text-gray-700 dark:text-gray-300 font-medium">{exp.company}</span>
                   </div>
                   <div className="flex items-center gap-2 mb-4">
-                    <MapPin size={16} className="text-gray-500" />
-                    <span className="text-gray-600">{exp.location}</span>
+                    <MapPin size={16} className="text-gray-500 dark:text-gray-400" />
+                    <span className="text-gray-600 dark:text-gray-300">{exp.location}</span>
                   </div>
                   
                   <ul className="space-y-2">
                     {exp.description.map((item, i) => (
-                      <li key={i} className="text-gray-600 leading-relaxed flex items-start gap-2">
-                        <span className="text-blue-600 mt-2">•</span>
+                      <li key={i} className="text-gray-600 dark:text-gray-300 leading-relaxed flex items-start gap-2">
+                        <span className="text-blue-600 dark:text-blue-400 mt-2">•</span>
                         <span>{item}</span>
                       </li>
                     ))}

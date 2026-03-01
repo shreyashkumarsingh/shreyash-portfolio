@@ -177,13 +177,13 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-6 bg-gradient-to-br from-slate-50 to-blue-50">
+    <section id="skills" className="py-20 px-6 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-gray-800 dark:to-gray-900">
       <div className="container mx-auto max-w-6xl">
         {/* Certifications Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Licenses & Certifications</h2>
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">Licenses & Certifications</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
             Professional certifications and achievements that validate my technical expertise and commitment to continuous learning.
           </p>
         </div>
@@ -192,7 +192,7 @@ const Skills = () => {
           {certifications.map((cert, index) => (
             <div
               key={index}
-              className="group bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100"
+              className="group bg-white dark:bg-gray-800 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-gray-100 dark:border-gray-700"
             >
               <div className="p-6">
                 <div className="flex items-start justify-between mb-4">
@@ -200,21 +200,21 @@ const Skills = () => {
                     {cert.icon}
                     <div className="flex items-center gap-2">
                       <Calendar className="text-gray-400" size={16} />
-                      <span className="text-sm text-gray-500">{cert.issueDate}</span>
+                      <span className="text-sm text-gray-500 dark:text-gray-400">{cert.issueDate}</span>
                     </div>
                   </div>
                 </div>
 
-                <h3 className="text-lg font-bold text-gray-800 mb-2 group-hover:text-blue-600 transition-colors">
+                <h3 className="text-lg font-bold text-gray-800 dark:text-gray-100 mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {cert.title}
                 </h3>
                 
-                <p className="text-gray-600 font-medium mb-3">
+                <p className="text-gray-600 dark:text-gray-300 font-medium mb-3">
                   {cert.issuer}
                 </p>
 
                 {cert.credentialId && (
-                  <p className="text-sm text-gray-500 mb-4">
+                  <p className="text-sm text-gray-500 dark:text-gray-400 mb-4">
                     Credential ID: {cert.credentialId}
                   </p>
                 )}
@@ -223,7 +223,7 @@ const Skills = () => {
                   {cert.skills.map((skill, i) => (
                     <span
                       key={i}
-                      className="px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-xs font-medium"
+                      className="px-2 py-1 bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-md text-xs font-medium"
                     >
                       {skill}
                     </span>
@@ -235,7 +235,7 @@ const Skills = () => {
                     href={cert.verifyUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-blue-600 hover:text-blue-700 font-medium transition-colors text-sm"
+                    className="flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium transition-colors text-sm"
                   >
                     <ExternalLink size={16} />
                     <span>Verify Certificate</span>
@@ -248,9 +248,9 @@ const Skills = () => {
 
         {/* Technical Skills Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 mb-4">Technical Skills</h2>
+          <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">Technical Skills</h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto"></div>
-          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+          <p className="text-gray-600 dark:text-gray-300 mt-4 max-w-2xl mx-auto">
             Here's an overview of my technical expertise across different areas of web development.
           </p>
         </div>
@@ -259,21 +259,21 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8 hover:shadow-xl transition-shadow duration-300"
             >
               <div className="flex items-center gap-3 mb-6">
                 {category.icon}
-                <h3 className="text-xl font-bold text-gray-800">{category.title}</h3>
+                <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100">{category.title}</h3>
               </div>
 
               <div className="space-y-4">
                 {category.skills.map((skill, i) => (
                   <div key={i} className="space-y-2">
                     <div className="flex justify-between items-center">
-                      <span className="text-gray-700 font-medium">{skill.name}</span>
-                      <span className="text-gray-500 text-sm">{skill.level}%</span>
+                      <span className="text-gray-700 dark:text-gray-300 font-medium">{skill.name}</span>
+                      <span className="text-gray-500 dark:text-gray-400 text-sm">{skill.level}%</span>
                     </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
+                    <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                       <div
                         className={`bg-gradient-to-r from-${category.color}-500 to-${category.color}-600 h-2 rounded-full transition-all duration-1000 ease-out`}
                         style={{ width: `${skill.level}%` }}
@@ -288,33 +288,33 @@ const Skills = () => {
 
         {/* Education Section */}
         <div className="mt-16 grid md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4 flex items-center gap-2">
               <div className="w-2 h-2 bg-blue-600 rounded-full"></div>
               Current Education
             </h3>
             <div className="space-y-2">
-              <h4 className="font-semibold text-gray-800">
+              <h4 className="font-semibold text-gray-800 dark:text-gray-100">
                 Kalinga Institute of Industrial Technology (KIIT)
               </h4>
-              <p className="text-gray-600">B.Tech in Computer Science & Communication Engineering</p>
-              <p className="text-gray-500">Expected Graduation: July 2027</p>
-              <p className="text-gray-500">Bhubaneswar, Odisha</p>
+              <p className="text-gray-600 dark:text-gray-300">B.Tech in Computer Science & Communication Engineering</p>
+              <p className="text-gray-500 dark:text-gray-400">Expected Graduation: July 2027</p>
+              <p className="text-gray-500 dark:text-gray-400">Bhubaneswar, Odisha</p>
             </div>
           </div>
 
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h3 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
+            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4 flex items-center gap-2">
               <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
               High School
             </h3>
             <div className="space-y-2">
-              <h4 className="font-semibold text-gray-800">
+              <h4 className="font-semibold text-gray-800 dark:text-gray-100">
                 Vivekananda Kendra Vidyalaya
               </h4>
-              <p className="text-gray-600">High School Diploma</p>
-              <p className="text-gray-500">Graduated: May 2023</p>
-              <p className="text-gray-500">Port Blair, A&N Islands</p>
+              <p className="text-gray-600 dark:text-gray-300">High School Diploma</p>
+              <p className="text-gray-500 dark:text-gray-400">Graduated: May 2023</p>
+              <p className="text-gray-500 dark:text-gray-400">Port Blair, A&N Islands</p>
             </div>
           </div>
         </div>

@@ -10,38 +10,38 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center pt-20 px-6">
+    <section className="min-h-screen flex items-center justify-center pt-20 px-6 dark:bg-gray-900">
       <div className="container mx-auto max-w-6xl">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Left Side - Content */}
           <div className="text-center md:text-left animate-fade-in">
-            <h1 className="text-5xl md:text-6xl font-bold text-gray-800 mb-6">
+            <h1 className="text-5xl md:text-6xl font-bold text-gray-800 dark:text-gray-100 mb-6">
               Hi, I'm{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
                 Shreyash
               </span>
             </h1>
-            <h2 className="text-2xl md:text-3xl text-gray-600 mb-6">
+            <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6">
               Full-Stack Developer & CS Student
             </h2>
-            <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               Passionate about creating innovative web solutions and building secure, 
               scalable applications. Currently pursuing B.Tech in Computer Science 
               with hands-on experience in modern web technologies.
             </p>
             
             {/* Contact Info */}
-            <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8 text-sm text-gray-600">
+            <div className="flex flex-wrap justify-center md:justify-start gap-4 mb-8 text-sm text-gray-600 dark:text-gray-300">
               <div className="flex items-center gap-2">
-                <MapPin size={16} className="text-blue-600" />
+                <MapPin size={16} className="text-blue-600 dark:text-blue-400" />
                 <span>Port Blair, A&N Islands</span>
               </div>
               {/* <div className="flex items-center gap-2">
-                <Phone size={16} className="text-blue-600" />
+                <Phone size={16} className="text-blue-600 dark:text-blue-400" />
                 <span>+91-</span>
               </div> */}
               <div className="flex items-center gap-2">
-                <Mail size={16} className="text-blue-600" />
+                <Mail size={16} className="text-blue-600 dark:text-blue-400" />
                 <span>shreyashkrsingh@gmail.com</span>
               </div>
             </div>
@@ -58,7 +58,7 @@ const Hero = () => {
                 href="https://www.linkedin.com/in/shreyashkrsingh/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
+                className="border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
               >
                 LinkedIn Profile
               </a>
@@ -80,7 +80,7 @@ const Hero = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="text-blue-600" size={32} />
+          <ChevronDown className="text-blue-600 dark:text-blue-400" size={32} />
         </div>
       </div>
     </section>

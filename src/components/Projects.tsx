@@ -23,24 +23,24 @@ const Projects = () => {
       demoUrl: "https://nexthire-2dkf.onrender.com/"
     },
     {
-      title: "Task Master Web App",
+      title: "FocusFlowAI",
       year: "2025",
-      description: "Task Master is a full-stack task management web application that helps users organize, track, and manage their daily tasks efficiently. It features a modern React frontend with a Node.js/Express backend, offering dashboards, calendar views, and productivity tools.",
-      technologies: ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express"],
+      description: "Built a microservices-based AI productivity platform combining task management, Pomodoro tracking, and machine learning-driven burnout prediction. Developed using React (TypeScript), Node.js, MongoDB, and a Python ML service, the system analyzes behavioral metrics to predict task duration and burnout risk while delivering personalized productivity insights. Containerized with Docker and deployed across cloud services with performance-optimized queries and secure JWT authentication.",
+      technologies: ["React", "TypeScript", "Node.js", "MongoDB", "Python", "Docker", "JWT", "Machine Learning"],
       icon: <Code className="text-purple-600" size={24} />,
       color: "purple",
-      codeUrl: "https://github.com/shreyashkumarsingh/Task-Master",
-      demoUrl: "https://taskmaster-frontend-qy61.onrender.com/"
+      codeUrl: "https://github.com/shreyashkumarsingh/focusFlowAI",
+      demoUrl: "https://focusflowai-f.onrender.com/"
     },
     {
-      title: "Restaurant Website",
+      title: "SupportDeskAI",
       year: "2025",
-      description: "Developed dynamic site with customer order system, feedback form, and mobile-first design using JavaScript and Bootstrap for enhanced user experience.",
-      technologies: ["HTML5", "CSS3","React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "Express", "Node.js", "CORS", "Nodemon"],
-      icon: <Smartphone className="text-green-600" size={24} />,
+      description: "Engineered a full-stack AI-driven support desk platform that classifies incoming tickets, provides confidence scoring, and supports audit logging and role-based workflows. Built using FastAPI, scikit-learn, and a React + TypeScript frontend, the system includes ML inference pipelines, fallback logic, explainability-ready outputs, and production-hardened deployment across separate backend and frontend services. Designed for real-world service desk operations with governance and performance optimization.",
+      technologies: ["FastAPI", "scikit-learn", "React", "TypeScript", "Python", "Machine Learning", "JWT", "Docker"],
+      icon: <Code className="text-green-600" size={24} />,
       color: "green",
-      codeUrl: "https://github.com/shreyashkumarsingh/Indian-Flavour-Palace",
-      demoUrl: "https://indian-flavour-palace-web.vercel.app/"
+      codeUrl: "https://github.com/shreyashkumarsingh/SupportDeskAI",
+      demoUrl: "https://supportdeskai-f.onrender.com"
     },
     // {
     //   title: "HireScan-AI Resume Parser",

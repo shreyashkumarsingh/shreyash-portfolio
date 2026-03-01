@@ -3,14 +3,14 @@ import { ExternalLink, Github, Code, Database, Smartphone } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Convoy Management Application",
+      title: "SupportDeskAI",
       year: "2025",
-      description: "Full-stack convoy tracking system for Port Blair administration using Node.js, Express.js, and TypeScript. Built with React and Tailwind CSS for a clean, responsive UI; aimed to enhance citizen security at inter-island checkposts.",
-      technologies: ["Node.js", "Express.js", "TypeScript", "React", "Tailwind CSS"],
-      icon: <Database className="text-blue-600" size={24} />,
-      color: "blue",
-      // codeUrl: "https://github.com/shreyashkumarsingh/convoy-management-app",
-      // demoUrl: "https://convoy-demo.example.com"
+      description: "Engineered a full-stack AI-driven support desk platform that classifies incoming tickets, provides confidence scoring, and supports audit logging and role-based workflows. Built using FastAPI, scikit-learn, and a React + TypeScript frontend, the system includes ML inference pipelines, fallback logic, explainability-ready outputs, and production-hardened deployment across separate backend and frontend services. Designed for real-world service desk operations with governance and performance optimization.",
+      technologies: ["FastAPI", "scikit-learn", "React", "TypeScript", "Python", "Machine Learning", "JWT", "Docker"],
+      icon: <Code className="text-green-600" size={24} />,
+      color: "green",
+      codeUrl: "https://github.com/shreyashkumarsingh/SupportDeskAI",
+      demoUrl: "https://supportdeskai-f.onrender.com"
     },
     {
       title: "NextHire AI",
@@ -33,14 +33,14 @@ const Projects = () => {
       demoUrl: "https://focusflowai-f.onrender.com/"
     },
     {
-      title: "SupportDeskAI",
+      title: "Convoy Management Application",
       year: "2025",
-      description: "Engineered a full-stack AI-driven support desk platform that classifies incoming tickets, provides confidence scoring, and supports audit logging and role-based workflows. Built using FastAPI, scikit-learn, and a React + TypeScript frontend, the system includes ML inference pipelines, fallback logic, explainability-ready outputs, and production-hardened deployment across separate backend and frontend services. Designed for real-world service desk operations with governance and performance optimization.",
-      technologies: ["FastAPI", "scikit-learn", "React", "TypeScript", "Python", "Machine Learning", "JWT", "Docker"],
-      icon: <Code className="text-green-600" size={24} />,
-      color: "green",
-      codeUrl: "https://github.com/shreyashkumarsingh/SupportDeskAI",
-      demoUrl: "https://supportdeskai-f.onrender.com"
+      description: "Full-stack convoy tracking system for Port Blair administration using Node.js, Express.js, and TypeScript. Built with React and Tailwind CSS for a clean, responsive UI; aimed to enhance citizen security at inter-island checkposts.",
+      technologies: ["Node.js", "Express.js", "TypeScript", "React", "Tailwind CSS"],
+      icon: <Database className="text-blue-600" size={24} />,
+      color: "blue",
+      // codeUrl: "https://github.com/shreyashkumarsingh/convoy-management-app",
+      // demoUrl: "https://convoy-demo.example.com"
     },
     // {
     //   title: "HireScan-AI Resume Parser",

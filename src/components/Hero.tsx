@@ -1,5 +1,5 @@
 
-import { ChevronDown, Mail, Phone, MapPin } from "lucide-react";
+import { ChevronDown, Mail, Phone, MapPin, FileText } from "lucide-react";
 
 const Hero = () => {
   const scrollToAbout = () => {
@@ -61,6 +61,15 @@ const Hero = () => {
                 className="border-2 border-blue-600 dark:border-blue-400 text-blue-600 dark:text-blue-400 px-8 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition-all duration-300"
               >
                 LinkedIn Profile
+              </a>
+              <a
+                href="https://drive.google.com/file/d/1mkYngzcXclkXi9n9om0SKS0MTd97HUSL/view?usp=drive_link"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="border-2 border-green-600 dark:border-green-400 text-green-600 dark:text-green-400 px-8 py-3 rounded-lg hover:bg-green-600 hover:text-white transition-all duration-300 flex items-center gap-2"
+              >
+                <FileText size={18} />
+                View Resume
               </a>
             </div>
           </div>
